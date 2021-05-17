@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+import urllib.parse
+import sys
+
+try:
+  url = sys.argv[1]
+  en_url = urllib.parse.quote_plus(url)
+  print("\n[+] Encoded URL : ",en_url,"\n")
+except:
+  print("\n[+] Usage : urlencode https://domain.com\n")
